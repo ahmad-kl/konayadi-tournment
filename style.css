@@ -1,0 +1,119 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background: #0f0f0f; 
+    color: white; 
+    text-align: center; 
+    padding-bottom: 50px; 
+}
+
+.container { 
+    width: 95%; 
+    max-width: 900px; 
+    margin: auto; 
+}
+
+h1 { 
+    color: #00d4ff; 
+    text-transform: uppercase; 
+    margin-top: 20px; 
+}
+
+/* Table Styling */
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    background: #1a1a1a; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+}
+
+th, td { 
+    padding: 12px 8px; 
+    border-bottom: 1px solid #333; 
+    text-align: center; 
+    font-size: 14px; 
+}
+
+th { 
+    background: #0056b3; 
+    color: white; 
+}
+
+tr:hover { 
+    background: #252525; 
+}
+
+.top-row { 
+    background: rgba(0, 212, 255, 0.1); 
+    font-weight: bold; 
+}
+
+/* Awards Section */
+.awards { 
+    display: flex; 
+    justify-content: space-around; 
+    margin: 25px 0; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.award-card { 
+    background: linear-gradient(45deg, #ffd700, #ffa500); 
+    color: black; 
+    padding: 15px; 
+    border-radius: 12px; 
+    font-weight: bold; 
+    flex: 1; 
+    min-width: 150px; 
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3); 
+}
+
+.separator {
+    border: 0.5px solid #333; 
+    margin: 40px 0;
+}
+
+/* Admin Panel */
+.admin-section { 
+    background: #222; 
+    padding: 20px; 
+    margin-top: 40px; 
+    border-radius: 15px; 
+    border: 1px dashed #444; 
+}
+
+.status-success {
+    color: #28a745;
+}
+
+input, select { 
+    padding: 10px; 
+    margin: 5px; 
+    border-radius: 5px; 
+    border: 1px solid #444; 
+    background: #333; 
+    color: white; 
+    width: 150px; 
+}
+
+button { 
+    padding: 10px 20px; 
+    background: #28a745; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+
+button.delete { 
+    background: #dc3545; 
+    margin-top: 10px; 
+    font-size: 12px; 
+}
+
+#adminControls { 
+    display: none; 
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>konayadi Tournament Live</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+<h1>🏆 konayadi Points Table</h1>
+
+<table id="pointsTable">
+<thead>
+<tr>
+<th>#</th>
+<th>Player</th>
+<th>P</th>
+<th>W</th>
+<th>D</th>
+<th>L</th>
+<th>GD</th>
+<th>Pts</th>
+</tr>
+</thead>
+<tbody id="tableBody"></tbody>
+</table>
+
+<div class="awards">
+<div class="award-card">👟 Golden Boot: <br><span id="topScorer">-</span></div>
+<div class="award-card">🧤 Golden Glove: <br><span id="topKeeper">-</span></div>
+</div>
+
+<hr class="separator">
+
+<div class="admin-section" id="adminSection" style="display:none;">
+
+<h3>🕹 Admin Panel</h3>
+
+<div id="loginArea">
+<input type="password" id="adminPass" placeholder="Enter Password">
+<button onclick="checkPass()">Login</button>
+</div>
+
+<div id="adminControls" style="display:none;">
+
+<p class="status-success">Admin Access Granted ✅</p>
+
+<input type="text" id="playerName" placeholder="Player Name">
+<button onclick="addPlayer()">Add Player</button>
+
+<br><br>
+
+<select id="selectPlayer"></select>
+<input type="number" id="gf" placeholder="GF">
+<input type="number" id="ga" placeholder="GA">
+
+<select id="matchResult">
+<option value="win">Win</option>
+<option value="draw">Draw</option>
+<option value="loss">Loss</option>
+</select>
+
+<button onclick="updateStats()">Update Match</button>
+
+<br><br>
+
+<input type="text" id="bootName" placeholder="Golden Boot">
+<input type="text" id="gloveName" placeholder="Golden Glove">
+<button onclick="updateAwards()">Update Awards</button>
+
+<br><br>
+
+<button class="delete" onclick="resetData()">Clear All Data</button>
+
+</div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
