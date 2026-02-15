@@ -1,4 +1,5 @@
-const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSbEaHFAntGn3qGP_rBflV8zUHn37uIMziRrnMNrPFqJzi5GsOeM0ZDyMNh1X1GZPAA5BpH3Xkjyec/pub?output=csv";
+https://docs.google.com/spreadsheets/d/e/2PACX-1vSbEaHFAntGn3qGP_rBflV8zUHn37uIMziRrnMNrPFqJzi5GsOeM0ZDyMNh1X1GZPAA5BpH3Xkjyec/pub?gid=0&single=true&output=csv
+
 
 async function loadSheetData() {
   const response = await fetch(sheetURL);
@@ -28,3 +29,4 @@ async function loadSheetData() {
 }
 
 loadSheetData();
+
